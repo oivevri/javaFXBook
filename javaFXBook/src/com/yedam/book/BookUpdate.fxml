@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1">
+	<padding>
+		<Insets topRightBottomLeft="20" />
+	</padding>
+	<bottom>
+		<HBox alignment="CENTER" prefHeight="24.0" prefWidth="123.0" spacing="20" BorderPane.alignment="CENTER">
+			<BorderPane.margin>
+				<Insets topRightBottomLeft="10" />
+			</BorderPane.margin>
+			<children>
+				<Button id="updateSave" text="저장" />
+            	<Button id="updateClose" text="창닫기" />
+			</children>
+		</HBox>
+	</bottom>
+   <top>
+		<GridPane alignment="CENTER" hgap="10" vgap="10" BorderPane.alignment="CENTER">
+   <children>
+   			<Label prefWidth="50" id="책이름" text="책이름" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+   			<Label prefWidth="50" text="저자" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+   			<Label prefWidth="50" text="출판사" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+   			<Label prefWidth="50" text="가격" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+   			<TextField id="tName" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+   			<TextField id="tWriter" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   			<TextField id="tPublisher" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   			<TextField id="tPrice" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+		</GridPane>
+   </top>
+</BorderPane>
+

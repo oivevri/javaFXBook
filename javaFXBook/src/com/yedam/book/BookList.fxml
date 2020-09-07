@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.yedam.book.BookController">
+	<center>
+		<TableView fx:id="tableView" prefHeight="200" prefWidth="420">
+			<columns>
+				<TableColumn prefWidth="100" resizable="false" text="name" />
+				<TableColumn prefWidth="100" resizable="false" text="writer" />
+				<TableColumn prefWidth="100" resizable="false" text="publisher" />
+				<TableColumn prefWidth="100" resizable="false" text="price" />
+			</columns>
+		</TableView>
+	</center>
+   <bottom>
+      <Button fx:id="btnAdd" text="도서 등록" BorderPane.alignment="CENTER" />
+   </bottom>
+
+</BorderPane>
