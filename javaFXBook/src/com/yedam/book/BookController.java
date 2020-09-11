@@ -85,7 +85,7 @@ public class BookController implements Initializable {
 		Stage stage = new Stage(StageStyle.UTILITY);
 		stage.initModality(Modality.WINDOW_MODAL);
 		stage.initOwner(btnAdd.getScene().getWindow());
-		
+		stage.setTitle("정보 수정");
 		
 		try {
 			Parent updateParent = FXMLLoader.load(getClass().getResource("BookUpdate.fxml"));
